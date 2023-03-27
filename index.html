@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="assets/riot-games-logo.png" alt="logo riot" class="logo-header">
+      <h1>H E A D E R con info y botones</h1>
+      <a type="button" id="join" href="https://signup.leagueoflegends.com/es-ar/signup/index">JUEGA GRATIS</a>
+    </header>
+    
+    <main>
+      <h2>¡Ya estás un paso más cerca de obtener tus Riot Points!</h2>
+
+      <p>
+        Ingresa tus datos
+      </p>
+
+      <input id="text"/>
+
+      <button type="submit" id="boton">Enviar</button>
+
+      <div class="valida hidden">
+        <p>
+          Procesando tu compra...
+        </p>
+      </div>
+
+      <div class="invalida hidden">
+        <p>
+          Lo sentimos, tu tarjeta no es valida.
+        </p>
+      </div>
+
+
+    </main>
+
+    <footer class="footer">&copy; Riot Games F O O T E R con info</footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
