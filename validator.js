@@ -35,6 +35,7 @@ const validator = {
     for (let i = 0; i < arrayMultiplicado.length; i++) {
       acumulado = acumulado + arrayMultiplicado[i]
     }
+
     // retorna verdadero cuando es un multiplo de 10
     return acumulado % 10 === 0
   }, 
