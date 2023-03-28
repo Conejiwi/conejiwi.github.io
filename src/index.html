@@ -8,20 +8,48 @@
   <body>
     <header>
       <img src="assets/riot-games-logo.png" alt="logo riot" class="logo-header">
-      <h1>H E A D E R con info y botones</h1>
+      <!-- <h1>H E A D E R con info y botones</h1> -->
       <a type="button" id="join" href="https://signup.leagueoflegends.com/es-ar/signup/index">JUEGA GRATIS</a>
     </header>
     
     <main>
       <h2>¡Ya estás un paso más cerca de obtener tus Riot Points!</h2>
 
+    
+
+
+    <div class="formulario">
       <p>
         Ingresa tus datos
       </p>
+      <div>
+        <label>Nombre del titular</label>
+        <input id="nombre-titular"/>
+      </div>
+      <div>
+        <label>Número de tarjeta</label>
+        <input id="num-tarjeta"/>
+      </div>
+      <div>
+        <label>CVC</label>
+        <input id="cvc"/>
+      </div>
+      <div class="flex">
+        <div>
+          <label>Mes</label>
+          <input id="month"/>
+        </div>
+        <div>
+          <label>Año</label>
+          <input id="year"/>
+        </div>
+      </div>
+      <div class="button-container">
+        <button type="submit" id="boton">ENVIAR</button>
+      </div>
+    </div>
 
-      <input id="text"/>
-
-      <button type="submit" id="boton">Enviar</button>
+      
 
       <div class="valida hidden">
         <p>

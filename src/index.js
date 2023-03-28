@@ -8,11 +8,10 @@ El i++ le suma 1 a la variable i.
 
 // Poder ingresar el texto en el recuadro + boton con funcionalidad
 const boton = document.getElementById("boton")
-const text = document.getElementById("text")
+const numTarjeta = document.getElementById("num-tarjeta")
 let tarjetaSinGato = ""
 boton.addEventListener("click", function(){
-  const input = document.getElementById("text");
-  const isValid = validator.isValid(input.value);
+  const isValid = validator.isValid(tarjetaSinGato);
   if (isValid) {
     const alerta = document.getElementsByClassName("valida")
     alerta[0].classList.remove("hidden")
@@ -28,13 +27,13 @@ boton.addEventListener("click", function(){
   console.log(validator.maskify(input.value)) */
 })
 
-text.addEventListener("focusout", function(){
-  tarjetaSinGato = text.value
-  text.value = validator.maskify(text.value)
+numTarjeta.addEventListener("focusout", function(){
+  tarjetaSinGato = numTarjeta.value
+  numTarjeta.value = validator.maskify(numTarjeta.value)
 })
 
-text.addEventListener("focusin", function(){
-  text.value = tarjetaSinGato
+numTarjeta.addEventListener("focusin", function(){
+  numTarjeta.value = tarjetaSinGato
 })
 
 
