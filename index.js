@@ -7,10 +7,11 @@ El i++ le suma 1 a la variable i.
 */
 
 // Poder ingresar el texto en el recuadro + boton con funcionalidad
-const boton = document.getElementById("boton")
+const form = document.getElementById("form")
 const numTarjeta = document.getElementById("num-tarjeta")
 let tarjetaSinGato = ""
-boton.addEventListener("click", function(){
+form.addEventListener("submit", function(event){
+  event.preventDefault();
   const isValid = validator.isValid(tarjetaSinGato);
   if (isValid) {
     const alerta = document.getElementsByClassName("valida")

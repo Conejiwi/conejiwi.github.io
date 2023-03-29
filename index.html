@@ -7,49 +7,48 @@
   </head>
   <body>
     <header>
-      <img src="assets/riot-games-logo.png" alt="logo riot" class="logo-header">
+      <img src="assets/logorito.svg" alt="logo riot" class="logo-header">
       <!-- <h1>H E A D E R con info y botones</h1> -->
       <a type="button" id="join" href="https://signup.leagueoflegends.com/es-ar/signup/index">JUEGA GRATIS</a>
     </header>
     
     <main>
-      <h2>¡Ya estás un paso más cerca de obtener tus Riot Points!</h2>
+      <h2>ESTÁS UN PASO MÁS CERCA</h2>
 
-    
-
-
-    <div class="formulario">
+    <div class="divider">
+      <img src="assets/divider.png" alt="division">
+    </div>
+      
+    <form id="form" class="formulario">
       <p>
         Ingresa tus datos
       </p>
       <div>
         <label>Nombre del titular</label>
-        <input id="nombre-titular"/>
+        <input id="nombre-titular" required autocomplete="off"/>
       </div>
       <div>
         <label>Número de tarjeta</label>
-        <input id="num-tarjeta"/>
+        <input id="num-tarjeta" required autocomplete="off" oninput="this.value=this.value.replace(/[^0-9.]/g, '')"/>
       </div>
       <div>
         <label>CVC</label>
-        <input id="cvc"/>
+        <input id="cvc" required autocomplete="off"/>
       </div>
       <div class="flex">
         <div>
           <label>Mes</label>
-          <input id="month"/>
+          <input id="month" required autocomplete="off"/>
         </div>
         <div>
           <label>Año</label>
-          <input id="year"/>
+          <input id="year" required autocomplete="off"/>
         </div>
       </div>
       <div class="button-container">
         <button type="submit" id="boton">ENVIAR</button>
       </div>
-    </div>
-
-      
+    </form>
 
       <div class="valida hidden">
         <p>
@@ -63,10 +62,9 @@
         </p>
       </div>
 
-
     </main>
 
-    <footer class="footer">&copy; Riot Games F O O T E R con info</footer>
+    <footer class="footer">&copy; Riot Games</footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
